@@ -1,0 +1,2 @@
+# UITableViewCellDelete
+UITableView 编辑状态下多选删除
