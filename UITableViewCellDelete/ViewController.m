@@ -40,6 +40,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationItem.title = @"多选删除";
+    
     self.deleteTableView.delegate = self;
     self.deleteTableView.dataSource = self;
     
