@@ -58,6 +58,7 @@
     
     /**
      *  NSMutableArray的个数无法监听,才使用number.没有找到好的办法
+     *  number 为删除数据的数组个数
      *  只要number的值发生变化,就会执行该方法
      *
      */
@@ -131,6 +132,7 @@
     
     UITableViewCell * cell = [self.deleteTableView cellForRowAtIndexPath:indexPath];
     
+    //点击Cell时更改系统自带的选中视图
     if (tableView.editing == YES) {
         UIImageView *imageView = [[[cell.subviews lastObject]subviews]firstObject];
         imageView.image = [UIImage imageNamed:@"chose_06"];
