@@ -20,4 +20,14 @@
     // Configure the view for the selected state
 }
 
+- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated{
+    [super setHighlighted:highlighted animated:animated];
+    if (highlighted) {
+        if (super.editing == YES) {
+            UIImageView *imageView = [[[self.subviews lastObject]subviews]firstObject];
+            imageView.image = [UIImage imageNamed:@"chose_06"];
+        }
+    }
+}
+
 @end

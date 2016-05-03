@@ -144,6 +144,8 @@
         self.number = self.deleteDataArray.count;
     }
 }
+
+
 /**
  *  取消选中时调用
  *
@@ -169,7 +171,8 @@
  *
  */
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return UITableViewCellEditingStyleDelete | UITableViewCellEditingStyleInsert;
+    return   UITableViewCellEditingStyleDelete | UITableViewCellEditingStyleInsert;
+
 }
 
 /**
@@ -183,6 +186,7 @@
 //        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
 //    }
 //}
+
 
 
 /**
